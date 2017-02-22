@@ -1362,6 +1362,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 #single-activity{
 	display:inline-block;
 	border-bottom: 2px solid #e9e9e9;
+	border-bottom: 2px solid #e9e9e9;
 	/* margin:0 10px 10px; */
 	padding:0 10px 10px;
 }
@@ -3640,11 +3641,14 @@ text-align:center;}
 #title-images .box:last-child{
 	margin-bottom:50px;
 }
-.edition-3 #title-images .box:nth-child(3), .edition-10 #title-images .box:nth-child(3), .edition-12 #title-images .box:nth-child(3){
+.edition-3 #title-images .box:nth-child(3), .edition-10 #title-images .box:nth-child(3) {
 	width: 100%;
 	margin: 0.5% 0 50px 0;
 }
-
+.edition-12 #title-images .box:nth-child(1){
+    width: 100%;
+    margin: 0 0 0.5% 0;
+}
 /*#logo, .flickr_badge_image, .jta-tweet-profile-image, .enlarge-ic, .feat-img, .actions, .wrap, #filtering-nav{
 	-webkit-transition: all 300ms ease; 
 	-moz-transition: all 300ms ease; 
