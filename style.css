@@ -3585,13 +3585,20 @@ text-align:center;}
 	width: 49.5%;
 	margin: 0.5% 0.5% 0.5% 0;
 }
-#archive-edition-images .box:nth-child(even), #films-chapter-images .box:nth-child(even), #title-images .box:nth-child(even), .post-photos .box:nth-child(even){
+#archive-edition-images .box:nth-child(even), #films-chapter-images .box:nth-child(even),
+#title-images .box:nth-child(even), .post-photos .box:nth-child(even){
 	float:right;
 	width: 49.5%;
 	margin: 0.5% 0 0.5% 0.5%;
 }
 .large-format-the-himalaya .post-photos .box:nth-child(5), .snapshots .post-photos .box:nth-child(3), .wanderland .post-photos .box:nth-child(3),
-.quicksilver .post-photos .box:nth-child(3), .to-the-grand .box:nth-child(3), .a-balanced-climb .box:nth-child(3), .sin-barreras .box:nth-child(3), .requisites-of-life .box:nth-child(2), .documentation .box:nth-child(2), .wizards-eye .post-photos .box:nth-child(4), .introduction .post-photos .box:nth-child(3), .introduction .post-photos .box:nth-child(9), .the-fisherman .post-photos .box:nth-child(3), .uncomfortable-comfort .post-photos .box:nth-child(5), .highlights .post-photos .box:nth-child(4), .an-evenings-excursion .post-photos .box:nth-child(5){
+.quicksilver .post-photos .box:nth-child(3), .to-the-grand .box:nth-child(3),
+.a-balanced-climb .box:nth-child(3), .sin-barreras .box:nth-child(3),
+.requisites-of-life .box:nth-child(2), .documentation .box:nth-child(2),
+.wizards-eye .post-photos .box:nth-child(4), .introduction .post-photos .box:nth-child(3),
+.introduction .post-photos .box:nth-child(9), .the-fisherman .post-photos .box:nth-child(3),
+.uncomfortable-comfort .post-photos .box:nth-child(5), .highlights .post-photos .box:nth-child(4),
+.an-evenings-excursion .post-photos .box:nth-child(5), .winter-solstice .post-photos .box:nth-child(5) {
 	float: right;
 	margin: 0.5% 0 0.2% 0.5%;
 } 
@@ -3619,7 +3626,10 @@ text-align:center;}
 	width: 49.5%;
 	margin: 0.48% 0.5% 50px 0;
 }
-.consistency .post-photos .box:nth-child(5), .taking-responsibility .post-photos .box:nth-child(7), .of-nature-and-self .post-photos .box:nth-child(5), .chin-deep-in-japan .post-photos .box:nth-child(5), .conversations-with-nature .post-photos .box:nth-child(5), .master-of-the-instant  .post-photos .box:nth-child(7) {
+.consistency .post-photos .box:nth-child(5), .taking-responsibility .post-photos .box:nth-child(7),
+.of-nature-and-self .post-photos .box:nth-child(5), .chin-deep-in-japan .post-photos .box:nth-child(5),
+.conversations-with-nature .post-photos .box:nth-child(5),
+.master-of-the-instant  .post-photos .box:nth-child(7), .if-only .post-photos .box:nth-child(5) {
 	float:right;
 	width: 49.5%;
 	margin: 0.48% 0 50px 0.5%;
@@ -3630,7 +3640,7 @@ text-align:center;}
 #title-images .box:last-child{
 	margin-bottom:50px;
 }
-.edition-3 #title-images .box:nth-child(3), .edition-10 #title-images .box:nth-child(3){
+.edition-3 #title-images .box:nth-child(3), .edition-10 #title-images .box:nth-child(3), .edition-12 #title-images .box:nth-child(3){
 	width: 100%;
 	margin: 0.5% 0 50px 0;
 }

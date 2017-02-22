@@ -42,7 +42,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
+<link rel="stylesheet" href="<?php echo get_bloginfo('stylesheet_url').'?v='.time(); ?>" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox-1.3.4.css" />
 
 <link rel="stylesheet" href="http://explore.usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css">

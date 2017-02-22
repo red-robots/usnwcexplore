@@ -255,12 +255,22 @@ if ( have_posts() ) :
 				<div id="hoverlink">
 				<?php }?>
                 <div class="img-container">
-                    <?php 
+                    <?php $alternate_banner = get_field('alternate_banner');
                     // Display the appropriate sized featured image
                     if( $my_size != 'col2' ): ?>
-                        <a href="<?php echo '#'.($post->post_name); ?>"><img src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];?>"></a>
+                        <a href="<?php echo '#'.($post->post_name); ?>"><img src="<?php
+                            if($alternate_banner):
+                                echo $alternate_banner;
+                            else:
+                                echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];
+                            endif; ?>"></a>
                     <?php else: ?>
-                        <a href="<?php echo '#'.($post->post_name); ?>"><img src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];?>"></a>
+                        <a href="<?php echo '#'.($post->post_name); ?>"><img src="<?php
+                            if($alternate_banner):
+                                echo $alternate_banner;
+                            else:
+	                            echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];
+                            endif; ?>"></a>
                     <?php endif; ?>
                  <?php if ( $hover_image ) { ?>
 				</div>
@@ -407,8 +417,7 @@ if ( have_posts() ) :
 						<?php } ?>
 						
 						<?php if ( has_post_thumbnail() ) {
-							$thumbnailImg=wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0];
-						?>
+							$thumbnailImg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0]; ?>
 							<img src="<?php echo $thumbnailImg;?>">
 						<?php } ?>
 						<?php if($video) { ?>
@@ -515,7 +524,8 @@ function popitup(url) {
    			$image7 = get_field('image_7');
    			$image8 = get_field('image_8');
    			$image9 = get_field('image_9');
-   			$image10 = get_field('image_10');
+		    $image10 = get_field('image_10');
+		    $image11 = get_field('image_11');
 			$imagecred1 = get_field('image_1_credit');
    			$imagecred2 = get_field('image_2_credit');
    			$imagecred3 = get_field('image_3_credit');
@@ -525,7 +535,8 @@ function popitup(url) {
    			$imagecred7 = get_field('image_7_credit');
    			$imagecred8 = get_field('image_8_credit');
    			$imagecred9 = get_field('image_9_credit');
-   			$imagecred10 = get_field('image_10_credit');
+		    $imagecred10 = get_field('image_10_credit');
+		    $imagecred11 = get_field('image_11_credit');
 			$imageloc1 = get_field('image_1_location');
    			$imageloc2 = get_field('image_2_location');
    			$imageloc3 = get_field('image_3_location');
@@ -535,7 +546,8 @@ function popitup(url) {
    			$imageloc7 = get_field('image_7_location');
    			$imageloc8 = get_field('image_8_location');
    			$imageloc9 = get_field('image_9_location');
-   			$imageloc10 = get_field('image_10_location');
+		    $imageloc10 = get_field('image_10_location');
+		    $imageloc11 = get_field('image_11_location');
    			$size = 'large';
    
 			 if ( $image1 )   {
@@ -727,27 +739,47 @@ function popitup(url) {
 				echo '</div></div>';
 
    			}
-   			
-   			if ( $image10 )   {
-   			echo '<div class="all box"><div class="img-container"><img src="'.$image10.'">'; ?>
 
-				<?php if ($imagecred10 || $imageloc10) { ?>
+		    if ( $image10 )   {
+			    echo '<div class="all box"><div class="img-container"><img src="'.$image10.'">'; ?>
 
-  				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
-				</div>
+			    <?php if ($imagecred10 || $imageloc10) { ?>
+
+                    <div class="showcredit">
+                        <img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+                    </div>
 
 
-				<div class="photocredit">
-	  	
-					<p><b>Photographer: </b><?php echo $imagecred10; ?></p>
-					<p><b>Location: </b><?php echo $imageloc10; ?></p>
+                    <div class="photocredit">
 
-				</div>
-				<?php }
-				echo '</div></div>';
+                        <p><b>Photographer: </b><?php echo $imagecred10; ?></p>
+                        <p><b>Location: </b><?php echo $imageloc10; ?></p>
 
-   			}
+                    </div>
+			    <?php }
+			    echo '</div></div>';
+
+		    }
+		    if ( $image11 )   {
+			    echo '<div class="all box"><div class="img-container"><img src="'.$image11.'">'; ?>
+
+			    <?php if ($imagecred11 || $imageloc11) { ?>
+
+                    <div class="showcredit">
+                        <img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+                    </div>
+
+
+                    <div class="photocredit">
+
+                        <p><b>Photographer: </b><?php echo $imagecred11; ?></p>
+                        <p><b>Location: </b><?php echo $imageloc11; ?></p>
+
+                    </div>
+			    <?php }
+			    echo '</div></div>';
+
+		    }
    			
    			
    			
