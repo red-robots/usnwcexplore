@@ -3645,7 +3645,7 @@ text-align:center;}
 	width: 100%;
 	margin: 0.5% 0 50px 0;
 }
-.edition-12 #title-images .box:nth-child(1){
+.edition-12 #title-images .box:nth-child(1), .edition-13 #title-images .box:nth-child(1){
     width: 100%;
     margin: 0 0 0.5% 0;
 }
