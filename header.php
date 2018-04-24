@@ -124,7 +124,7 @@ addToHomescreen({skipFirstVisit:true,maxDisplayCount:1});
     			</nav>
     			
                 <div id="logo">
-                    <a href="http://explore.usnwc.org/"><img src="/wp-content/uploads/2015/07/ExploreLogo.png"></a>
+                    <a href="https://usnwc.org/"><img src="/wp-content/uploads/2018/04/w-logo.png"></a>
                 </div>
                 
                 <nav class="right">

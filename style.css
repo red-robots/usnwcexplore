@@ -967,7 +967,6 @@ li.breadcrumb-item {
 	width:50px;
 	max-width: 50px;
 	margin-top:15px;
-	//old code margin-left:15px;
 	float: right;
 	display: block;
 }
@@ -979,11 +978,9 @@ li.breadcrumb-item {
 }
 #logo img {
 	margin-bottom: 0;
-	width:181px;
+	width:50px;
 	display: block;
-	max-width: 181px;
-	// old code switched to #site-info margin-top:15px;
-	//old code margin-left:15px;
+	max-width: 50px;
 }
 
 #site-info a{
@@ -992,7 +989,6 @@ li.breadcrumb-item {
 	text-decoration:none;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	margin-top: 0;
-	//old code margin-right: 30px;
 	margin-right: 0;
 	margin-bottom: 0;
 	margin-left: 0;
@@ -1010,6 +1006,7 @@ li.breadcrumb-item {
 }
 #site-info2 {
 	display: table;
+	text-align: center;
 	margin: 10.5px auto;
 }
 #site-info2 nav {
@@ -3373,10 +3370,15 @@ input.email-input{
 	background-position: -40px -40px;
 	width: 40px;
 }
-
-
+#footer .copyright p {
+color: #4b5054;
+font-size: 11pt;
+}
+#footer .copyright p a {
+	color: #3a80bc;
+}
 .copyright {width: auto;
-color: #666;
+padding: 20px 0;
 text-align:center;}
 #footer-nav {float:left;width: auto;margin-top: -20px;}
 
@@ -3945,6 +3947,12 @@ margin-top: -5px;
 }
 /* Horizontal mobile */
 @media screen and (max-width: 670px){
+	.noshow-mobile {
+		display: none;
+	}
+	.break-mobile {
+		display: block;
+	}
 	#site-info2 {
 		width: 25%;
 		display: inline-block;
