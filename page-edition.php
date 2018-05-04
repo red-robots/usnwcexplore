@@ -5,31 +5,53 @@
  * @alter   1.6
 */
 
-get_header('category'); ?>
+get_header('category'); 
 
-<div id="img-container-home">
+$featured_image_mobile = get_field('featured_image_mobile');?>
+
+<div id="img-container-home" class="<?php if($featured_image_mobile) echo "mobile-present";?>">
 
 	<?php 
 	global $post;
 	$featured_image_location = get_field('featured_image_location');
 	$featured_image_credit	= get_field('featured_image_credit');
-
+	$featured_image_location_mobile = get_field('featured_image_location_mobile');
+	$featured_image_credit_mobile	= get_field('featured_image_credit_mobile');
 	?>
 	
-	<img src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0];?>">
+	<img class="desktop" src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0];?>">
+	<?php if($featured_image_mobile){?>
+		<img class="mobile" src="<?php echo $featured_image_mobile;?>">
+	<?php } ?>
 
 	<?php if ($featured_image_credit || $featured_image_location) { ?>
 
-  		<div class="showcredit">
+		<div class="showcredit desktop">
+			<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+		</div>
+
+
+		<div class="photocredit desktop">
+	
+			<?php if ($featured_image_credit) { ?> <p><b>Photographer:</b> <?php echo $featured_image_credit; ?></p> <?php } ?>
+
+			<?php if ($featured_image_location) { ?><p><b>Location:</b> <?php echo $featured_image_location; ?></p> <?php } ?>
+		</div>
+
+	<?php } ?>
+
+	<?php if ($featured_image_credit_mobile || $featured_image_location_mobile) { ?>
+
+		<div class="showcredit mobile">
 			<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 		</div>
 
 
 		<div class="photocredit">
-  	
-			<?php if ($featured_image_credit) { ?> <p><b>Photographer:</b> <?php echo $featured_image_credit; ?></p> <?php } ?>
+	
+			<?php if ($featured_image_credit_mobile) { ?> <p><b>Photographer:</b> <?php echo $featured_image_credit_mobile; ?></p> <?php } ?>
 
-			<?php if ($featured_image_location) { ?><p><b>Location:</b> <?php echo $featured_image_location; ?></p> <?php } ?>
+			<?php if ($featured_image_location_mobile) { ?><p><b>Location:</b> <?php echo $featured_image_location_mobile; ?></p> <?php } ?>
 		</div>
 
 	<?php } ?>
@@ -260,14 +282,14 @@ if ( have_posts() ) :
 						<?php $alternate_banner = get_field('alternate_banner');
 						// Display the appropriate sized featured image?>
 						<a href="<?php echo '#'.($post->post_name); ?>"><img class="desktop" src="<?php
-							if($alternate_banner):
+							if($alternate_banner){
 								echo $alternate_banner;
-							else:
+							} else {
 								echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];
-							endif; ?>">
-							<?php if($mobile_banner):?>
+							} ?>">
+							<?php if($mobile_banner){?>
 								<img class="mobile" src="<?php echo $mobile_banner;?>">
-							<?php endif;?>
+							<?php } ?>
 						</a>
 					</div><!-- #img-container -->
 				<?php if ( $hover_image ) { ?>
@@ -404,7 +426,8 @@ if ( have_posts() ) :
     
 <a name="<?php echo($post->post_name) ?>"></a>
 
-<div class="feat-img">
+<?php $mobile_banner = get_field('mobile_banner');?>
+<div class="feat-img <?php if($mobile_banner) echo "mobile-present";?>">
     <?php 
 	
 	$video=get_field('video_url'); ?>
@@ -415,7 +438,10 @@ if ( have_posts() ) :
 						
 						<?php if ( has_post_thumbnail() ) {
 							$thumbnailImg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0]; ?>
-							<img src="<?php echo $thumbnailImg;?>">
+							<img class="desktop" src="<?php echo $thumbnailImg;?>">
+						<?php } ?>
+						<?php if($mobile_banner){?>
+							<img class="mobile" src="<?php echo $mobile_banner;?>">
 						<?php } ?>
 						<?php if($video) { ?>
 						</a> 
@@ -430,21 +456,40 @@ if ( have_posts() ) :
   	?>
 <?php if (get_field('photo_location') ) {
     $location = get_field('photo_location');
-    }
+	}
+	
+    $location_mobile = get_field('photo_location_mobile');
+    $credit_mobile = get_field('photo_credit_mobile');
   	?>
 
 <?php if ($location || $credit) { ?>
 
-  	<div class="showcredit">
+<div class="showcredit desktop">
+<img class="white" src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+</div>
+
+
+<div class="photocredit desktop">
+
+<?php if ($credit) { ?> <p><b>Photographer:</b> <?php echo $credit; ?></p> <?php } ?>
+
+<?php if ($location) { ?><p><b>Location:</b> <?php echo $location; ?></p> <?php } ?>
+</div>
+
+<?php } ?>
+
+<?php if ($location_mobile || $credit_mobile) { ?>
+
+  	<div class="showcredit mobile">
 <img class="white" src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 </div>
 
 
 <div class="photocredit">
   	
-<?php if ($credit) { ?> <p><b>Photographer:</b> <?php echo $credit; ?></p> <?php } ?>
+<?php if ($credit_mobile) { ?> <p><b>Photographer:</b> <?php echo $credit_mobile; ?></p> <?php } ?>
 
-<?php if ($location) { ?><p><b>Location:</b> <?php echo $location; ?></p> <?php } ?>
+<?php if ($location_mobile) { ?><p><b>Location:</b> <?php echo $location_mobile; ?></p> <?php } ?>
 </div>
 
 <?php } ?>

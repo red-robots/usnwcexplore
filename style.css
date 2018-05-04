@@ -1589,7 +1589,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 	display: none;
 }
 
-#title-images .box.mobile-present img.mobile {
+.mobile-present .mobile {
 	display: none;
 }
 #title-images .box img, .box object{
@@ -3725,11 +3725,11 @@ a.filter-btn, a.comment span{
 /* iPad */
 @media screen and (max-width: 768px)  {
 	
-	#title-images .box.mobile-present img.desktop {
-		display: none;
-	}
-	#title-images .box.mobile-present img.mobile {
+	.mobile-present .mobile{
 		display: block;
+	}
+	.mobile-present .desktop{
+		display: none;
 	}
     
     /* ********************************

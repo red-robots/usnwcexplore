@@ -31,7 +31,7 @@ get_header('archives'); ?>
 <div id="archives-page">    
 	<div id="grid">
 		<div id="archive-edition-images">
-			<?php $args=array("post__not_in"=>array(69,226,710,794),"post_type"=>"page","posts_per_page"=>-1); 
+			<?php $args=array("post__not_in"=>array(69,226,710,794,1159),"post_type"=>"page","posts_per_page"=>-1); 
 			$query = new WP_Query($args);
        		 	if($query->have_posts()){
         			while($query->have_posts()){
