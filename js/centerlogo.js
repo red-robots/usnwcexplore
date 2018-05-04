@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
 	//get the site info which holds the elements we want to center, and set offset used to 
 	//offset the centering of site info since the explore logo isn't centered in site info
 	var $siteInfo2=jQuery('#site-info2');
-	var offset=-15;
+	var offset=20;
 	//on first pass center site info if window size greater than 670 and set function to 
 	//recenter on window resize
 	if(window.innerWidth>670){

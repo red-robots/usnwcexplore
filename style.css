@@ -1000,7 +1000,6 @@ li.breadcrumb-item {
 #site-info{
 	margin: 12px 25px 12px 0;
 	float: right;
-	//old code margin-top:0 !important;
 	top: 0;
 	left: 0;
 }
@@ -1590,9 +1589,11 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 	display: none;
 }
 
+#title-images .box.mobile-present img.mobile {
+	display: none;
+}
 #title-images .box img, .box object{
 	z-index:0;
-	//old code height: 50%;
 }
 
 .box-content{
@@ -3723,6 +3724,13 @@ a.filter-btn, a.comment span{
 
 /* iPad */
 @media screen and (max-width: 768px)  {
+	
+	#title-images .box.mobile-present img.desktop {
+		display: none;
+	}
+	#title-images .box.mobile-present img.mobile {
+		display: block;
+	}
     
     /* ********************************
 				Header 

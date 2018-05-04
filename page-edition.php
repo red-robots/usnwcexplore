@@ -228,10 +228,12 @@ if ( have_posts() ) :
         
         foreach( ( get_the_category() ) as $category ) {
             $category_classes .= $category->category_nicename . ' ';
-        } 
+		} 
+		
+	$mobile_banner = get_field('mobile_banner');
     ?>
     
-    <div class="all box ">
+    <div class="all box <?php if($mobile_banner) echo "mobile-present";?>">
       
         <div <?php post_class( 'box-content '.$content_class ) ?>>
             <?php 
@@ -254,28 +256,23 @@ if ( have_posts() ) :
 				<?php if ( $hover_image ) { ?>
 				<div id="hoverlink">
 				<?php }?>
-                <div class="img-container">
-                    <?php $alternate_banner = get_field('alternate_banner');
-                    // Display the appropriate sized featured image
-                    if( $my_size != 'col2' ): ?>
-                        <a href="<?php echo '#'.($post->post_name); ?>"><img src="<?php
-                            if($alternate_banner):
-                                echo $alternate_banner;
-                            else:
-                                echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];
-                            endif; ?>"></a>
-                    <?php else: ?>
-                        <a href="<?php echo '#'.($post->post_name); ?>"><img src="<?php
-                            if($alternate_banner):
-                                echo $alternate_banner;
-                            else:
-	                            echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];
-                            endif; ?>"></a>
-                    <?php endif; ?>
-                 <?php if ( $hover_image ) { ?>
+					<div class="img-container">
+						<?php $alternate_banner = get_field('alternate_banner');
+						// Display the appropriate sized featured image?>
+						<a href="<?php echo '#'.($post->post_name); ?>"><img class="desktop" src="<?php
+							if($alternate_banner):
+								echo $alternate_banner;
+							else:
+								echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),"full")[0];
+							endif; ?>">
+							<?php if($mobile_banner):?>
+								<img class="mobile" src="<?php echo $mobile_banner;?>">
+							<?php endif;?>
+						</a>
+					</div><!-- #img-container -->
+				<?php if ( $hover_image ) { ?>
 				</div>
 				<?php }?>   
-             </div><!-- #img-container -->
                
                 <?php // Display post title ?>
                 
