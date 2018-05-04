@@ -5,22 +5,37 @@
  * @alter         1.6
 */
 
-get_header('archives'); ?>
+get_header('archives'); 
+$featured_image_mobile = get_field('featured_image_mobile');?>
 
-<div id="img-container-home">
+<div id="img-container-home" class="<?php if($featured_image_mobile) echo "mobile-present";?>">
 	<?php 
 	global $post;
 	$featured_image_location = get_field('featured_image_location');
 	$featured_image_credit	= get_field('featured_image_credit');
+	$featured_image_location_mobile = get_field('featured_image_location_mobile');
+	$featured_image_credit_mobile	= get_field('featured_image_credit_mobile');
 	?>
-	<img src="<?php echo preg_replace("/http:\/\/explore.usnwc.org/","",wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0]);?>">
-	<?php if ($featured_image_credit || $featured_image_location) { ?>
-  		<div class="showcredit">
+	<img class="desktop" src="<?php echo preg_replace("/http:\/\/explore.usnwc.org/","",wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0]);?>">
+	<?php if($featured_image_mobile){?>
+		<img class="mobile" src="<?php echo $featured_image_mobile;?>">
+	<?php }
+	if ($featured_image_credit || $featured_image_location) { ?>
+  		<div class="showcredit desktop">
+			<img src="/wp-content/uploads/2015/03/Photo_Icon_White.png">
+		</div>
+		<div class="photocredit desktop">
+			<?php if ($featured_image_credit) { ?> <p><b>Photographer:</b> <?php echo $featured_image_credit; ?></p> <?php } ?>
+			<?php if ($featured_image_location) { ?><p><b>Location:</b> <?php echo $featured_image_location; ?></p> <?php } ?>
+		</div>
+	<?php } ?>
+	<?php if ($featured_image_credit_mobile || $featured_image_location_mobile) { ?>
+  		<div class="showcredit mobile">
 			<img src="/wp-content/uploads/2015/03/Photo_Icon_White.png">
 		</div>
 		<div class="photocredit">
-			<?php if ($featured_image_credit) { ?> <p><b>Photographer:</b> <?php echo $featured_image_credit; ?></p> <?php } ?>
-			<?php if ($featured_image_location) { ?><p><b>Location:</b> <?php echo $featured_image_location; ?></p> <?php } ?>
+			<?php if ($featured_image_credit_mobile) { ?> <p><b>Photographer:</b> <?php echo $featured_image_credit_mobile; ?></p> <?php } ?>
+			<?php if ($featured_image_location_mobile) { ?><p><b>Location:</b> <?php echo $featured_image_location_mobile; ?></p> <?php } ?>
 		</div>
 	<?php } ?>
 </div><!-- img container home-->
