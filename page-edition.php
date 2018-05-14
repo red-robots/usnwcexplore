@@ -27,7 +27,7 @@ $featured_image_mobile = get_field('featured_image_mobile');?>
 	<?php if ($featured_image_credit || $featured_image_location) { ?>
 
 		<div class="showcredit desktop">
-			<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+			<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 		</div>
 
 
@@ -43,7 +43,7 @@ $featured_image_mobile = get_field('featured_image_mobile');?>
 	<?php if ($featured_image_credit_mobile || $featured_image_location_mobile) { ?>
 
 		<div class="showcredit mobile">
-			<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+			<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 		</div>
 
 
@@ -465,7 +465,7 @@ if ( have_posts() ) :
 <?php if ($location || $credit) { ?>
 
 <div class="showcredit desktop">
-<img class="white" src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+<img class="white" src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 </div>
 
 
@@ -481,7 +481,7 @@ if ( have_posts() ) :
 <?php if ($location_mobile || $credit_mobile) { ?>
 
   	<div class="showcredit mobile">
-<img class="white" src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+<img class="white" src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 </div>
 
 
@@ -540,12 +540,12 @@ function popitup(url) {
     
     <div class="social">
     	<a href="https://twitter.com/share?text=<?php echo get_the_title($post->ID);?>&hashtags=usnwcEXPLORE&via=usnwc" onclick="return popitup('https://twitter.com/share?text=<?php echo get_the_title($post->ID);?>&hashtags=usnwcEXPLORE&via=usnwc')">
-    		<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/twitter.png">
+    		<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/twitter.png">
     	</a>
     </div>
     <div class="social">
     	<a href="http://www.facebook.com/sharer.php?u=http://explore.usnwc.org<?php echo $_SERVER['REQUEST_URI'];?>" onclick="return popitup('http://www.facebook.com/sharer.php?u=http://explore.usnwc.org<?php echo $_SERVER['REQUEST_URI'];?>')">
-    		<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/facebook.png">
+    		<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/facebook.png">
     	</a>
     </div>
     
@@ -598,7 +598,7 @@ function popitup(url) {
 				<?php if ($imagecred1 || $imageloc1) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -620,7 +620,7 @@ function popitup(url) {
 				<?php if ($imagecred2 || $imageloc2) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -641,7 +641,7 @@ function popitup(url) {
 				<?php if ($imagecred3 || $imageloc3) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -662,7 +662,7 @@ function popitup(url) {
 				<?php if ($imagecred4 || $imageloc4) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -683,7 +683,7 @@ function popitup(url) {
 				<?php if ($imagecred5 || $imageloc5) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -704,7 +704,7 @@ function popitup(url) {
 				<?php if ($imagecred6 || $imageloc6) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -725,7 +725,7 @@ function popitup(url) {
 				<?php if ($imagecred7 || $imageloc7) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -746,7 +746,7 @@ function popitup(url) {
 				<?php if ($imagecred8 || $imageloc8) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -767,7 +767,7 @@ function popitup(url) {
 				<?php if ($imagecred9 || $imageloc9) { ?>
 
   				<div class="showcredit">
-				<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+				<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 				</div>
 
 
@@ -788,7 +788,7 @@ function popitup(url) {
 			    <?php if ($imagecred10 || $imageloc10) { ?>
 
                     <div class="showcredit">
-                        <img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+                        <img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
                     </div>
 
 
@@ -808,7 +808,7 @@ function popitup(url) {
 			    <?php if ($imagecred11 || $imageloc11) { ?>
 
                     <div class="showcredit">
-                        <img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+                        <img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
                     </div>
 
 

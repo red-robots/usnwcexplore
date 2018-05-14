@@ -94,7 +94,7 @@ $featured_image_mobile = get_field('featured_image_mobile');?>
 									<img src="/wp-content/uploads/2015/03/Explore_2000x800.jpg">
 								</a>
 								<div class="showcredit">
-									<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+									<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 								</div><!--end of show credit-->
 								<div class="photocredit">
 									<p><b>Photographer: Cooper Lambla</b></p>

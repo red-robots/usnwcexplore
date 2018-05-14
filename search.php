@@ -4,7 +4,7 @@
  * @since   1.0
  * @alter   2.1.3
 */
-header("Location: http://explore.usnwc.org/");
+wp_redirect(get_bloginfo('url'));
 exit;
 get_header('search'); ?>
 <div id="grid">

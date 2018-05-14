@@ -18,7 +18,7 @@ get_header('page'); ?>
 	<?php if ($featured_image_credit || $featured_image_location) { ?>
 
   		<div class="showcredit">
-			<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
+			<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/Photo_Icon_White.png">
 		</div>
 
 
@@ -238,7 +238,7 @@ function popitup(url) {
 <?php if ($imagecred1 || $imageloc1) { ?>
 
   	<div class="showcredit">
-<img src="http://explore.usnwc.org/wp-content/uploads/2015/03/W_logo.png">
+<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/W_logo.png">
 </div>
 
 

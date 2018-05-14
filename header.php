@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="<?php echo get_bloginfo('stylesheet_url').'?v='.time(); ?>" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox-1.3.4.css" />
 
-<link rel="stylesheet" href="http://explore.usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css">
+<link rel="stylesheet" href="https://stories.usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css">
 
 
 <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
@@ -62,10 +62,10 @@ twttr.conversion.trackPid('l4lpc');
 addToHomescreen({skipFirstVisit:true,maxDisplayCount:1});
 </script>
 
-<!--<link rel="apple-touch-icon" sizes="57x57" href="http://explore.usnwc.org/wp-content/uploads/2015/03/Explore_57x57.jpg" />
-<link rel="apple-touch-icon" sizes="72x72" href="http://explore.usnwc.org/wp-content/uploads/2015/03/Explore_72x72.jpg" />
-<link rel="apple-touch-icon" sizes="114x114" href="http://explore.usnwc.org/wp-content/uploads/2015/03/Explore_114x114.jpg" />-->
-<link rel="apple-touch-icon" sizes="144x144" href="http://explore.usnwc.org/wp-content/uploads/2015/05/Explore_Favicon.png" />
+<!--<link rel="apple-touch-icon" sizes="57x57" href="https://stories.usnwc.org/wp-content/uploads/2015/03/Explore_57x57.jpg" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://stories.usnwc.org/wp-content/uploads/2015/03/Explore_72x72.jpg" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://stories.usnwc.org/wp-content/uploads/2015/03/Explore_114x114.jpg" />-->
+<link rel="apple-touch-icon" sizes="144x144" href="https://stories.usnwc.org/wp-content/uploads/2015/05/Explore_Favicon.png" />
 
 <!--<link rel="stylesheet" href="http://www.usnwc.org/play/franklin-webfonts/franklingothicfs_condensed_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 
@@ -115,7 +115,7 @@ addToHomescreen({skipFirstVisit:true,maxDisplayCount:1});
 	<img class="false-logo" src="/wp-content/uploads/2015/07/false-logo.jpg">
 </div>
 <div id="header">
-<div class="showmenu"><img src="http://explore.usnwc.org/wp-content/uploads/2015/03/hamburger.png"></div>
+<div class="showmenu"><img src="https://stories.usnwc.org/wp-content/uploads/2015/03/hamburger.png"></div>
 <div id="site-info2">
         
     			
