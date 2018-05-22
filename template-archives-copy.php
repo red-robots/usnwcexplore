@@ -13,7 +13,7 @@ get_header('archives'); ?>
 	$featured_image_location = get_field('featured_image_location');
 	$featured_image_credit	= get_field('featured_image_credit');
 	?>
-	<img src="<?php echo preg_replace("/http:\/\/explore.usnwc.org/","",wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0]);?>">
+	<img src="<?php echo preg_replace("/http:\/\/stories.uswnc.org/","",wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0]);?>">
 	<?php if ($featured_image_credit || $featured_image_location) { ?>
   		<div class="showcredit">
 			<img src="/wp-content/uploads/2015/03/Photo_Icon_White.png">

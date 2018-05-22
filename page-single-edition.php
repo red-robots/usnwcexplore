@@ -363,12 +363,12 @@ function popitup(url) {
 </script>
     
     <div class="social">
-    	<a href="https://twitter.com/share?text=<?php echo get_the_title($post->ID);?>&hashtags=usnwcEXPLORE&via=usnwc" onclick="return popitup('https://twitter.com/share?text=<?php echo get_the_title($post->ID);?>&hashtags=usnwcEXPLORE&via=usnwc')">
+    	<a href="https://twitter.com/share?text=<?php echo get_the_title($post->ID);?>&hashtags=usnwcstories&via=usnwc" onclick="return popitup('https://twitter.com/share?text=<?php echo get_the_title($post->ID);?>&hashtags=usnwcstories&via=usnwc')">
     		<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/twitter.png">
     	</a>
     </div>
     <div class="social">
-    	<a href="http://www.facebook.com/sharer.php?u=http://explore.usnwc.org<?php echo $_SERVER['REQUEST_URI'];?>" onclick="return popitup('http://www.facebook.com/sharer.php?u=http://explore.usnwc.org<?php echo $_SERVER['REQUEST_URI'];?>')">
+    	<a href="http://www.facebook.com/sharer.php?u=http://stories.uswnc.org<?php echo $_SERVER['REQUEST_URI'];?>" onclick="return popitup('http://www.facebook.com/sharer.php?u=http://stories.uswnc.org<?php echo $_SERVER['REQUEST_URI'];?>')">
     		<img src="https://stories.usnwc.org/wp-content/uploads/2015/03/facebook.png">
     	</a>
     </div>

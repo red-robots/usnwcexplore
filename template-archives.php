@@ -16,7 +16,7 @@ $featured_image_mobile = get_field('featured_image_mobile');?>
 	$featured_image_location_mobile = get_field('featured_image_location_mobile');
 	$featured_image_credit_mobile	= get_field('featured_image_credit_mobile');
 	?>
-	<img class="desktop" src="<?php echo preg_replace("/http:\/\/explore.usnwc.org/","",wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0]);?>">
+	<img class="desktop" src="<?php echo preg_replace("/http:\/\/stories.uswnc.org/","",wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full')[0]);?>">
 	<?php if($featured_image_mobile){?>
 		<img class="mobile" src="<?php echo $featured_image_mobile;?>">
 	<?php }
@@ -56,7 +56,7 @@ $featured_image_mobile = get_field('featured_image_mobile');?>
 						<div class=" archive <?php echo the_title();?> all box">
         						<div class="img-container">
 								<a href="<?php echo get_permalink($queried_object_id);?>">
-									<img src="<?php echo preg_replace("/http:\/\/explore.usnwc.org/","",$archive_image);?>">
+									<img src="<?php echo preg_replace("/http:\/\/stories.uswnc.org/","",$archive_image);?>">
 								</a>
 								<?php
 								$featured_image_location = get_field('featured_image_location');
